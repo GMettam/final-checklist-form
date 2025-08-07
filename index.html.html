@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAIG McKIE, LAWYER — Estate Planning Checklist</title>
+    <style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .form-header {
+            background: #f0f0f0;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            -webkit-text-fill-color: #333;
+            background: none;
+        }
+
+        .header-text h1 {
+            font-size: 1.4rem;
+            margin-bottom: 3px;
+            font-weight: 300;
+        }
+
+        .form-content {
+            padding: 20px 15px;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(248, 249, 250, 0.8);
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 8px;
+        }
+
+        .form-row-condensed .form-group,
+        .form-row-condensed > fieldset,
+        .name-abn-row .form-group {
+            margin-bottom: 0;
+        }
+        
+        fieldset {
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            padding: 0;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .floating-label-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .floating-input {
+            display: block;
+            width: 100%;
+            padding: 20px 16px 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background: white;
+            box-sizing: border-box;
+            height: 48px;
+        }
+
+        .floating-textarea {
+            min-height: 48px;
+            height: 48px; /* Start collapsed */
+            resize: vertical;
+            padding-top: 20px; /* Adjust padding for label */
+        }
+
+        .floating-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 1px rgba(102, 126, 234, 0.3);
+        }
+        
+        input[type="date"].floating-input {
+            color: transparent;
+        }
+        input[type="date"].floating-input.has-content {
+            color: #333;
+        }
+
+        .floating-label {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            background: white;
+            padding: 0 4px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .floating-textarea ~ .floating-label {
+             top: 24px; /* Adjust for textarea */
+        }
+
+        .floating-label.active {
+            top: 10px;
+            font-size: 12px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .floating-label-text {
+            font-weight: bold;
+            color: inherit;
+            margin-right: 6px;
+        }
+
+        .floating-instruction {
+            color: #666;
+            font-weight: normal;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .form-row-condensed {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .name-abn-row {
+            display: grid;
+            grid-template-columns: 2fr 1.2fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .value-control-row {
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .form-row-three {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-row-four {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .form-group label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .form-group select {
+            width: 100%;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: white;
+            min-height: 48px;
+            height: 48px;
+            box-sizing: border-box;
+            transition: border-color: 0.3s ease;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 1em;
+        }
+
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 1px rgba(102, 126, 234, 0.3);
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 36px;
+        }
+
+        .checkbox-item:hover {
+            border-color: #667eea;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            accent-color: #667eea;
+        }
+
+        .radio-group {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 8px;
+            align-items: stretch;
+            justify-content: start;
+            max-width: 200px;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 48px;
+            height: 48px;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .form-row-condensed .radio-group {
+            grid-template-columns: auto auto;
+            gap: 6px;
+            max-width: 180px;
+        }
+
+        .form-row-condensed .radio-item {
+            min-height: 48px;
+            height: 48px;
+            padding: 8px 12px;
+        }
+
+        .radio-item:hover {
+            border-color: #667eea;
+        }
+
+
+        .radio-item input[type="radio"] {
+            margin: 0 8px 0 0;
+            width: 16px;
+            height: 16px;
+            accent-color: #667eea;
+            flex-shrink: 0;
+            vertical-align: middle;
+        }
+        
+        .radio-item input[type="radio"]:focus {
+            box-shadow: none;
+        }
+
+        .radio-item span {
+            line-height: 1.1;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+
+        .asset-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .asset-table th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .asset-table td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .asset-table td:first-child,
+        .asset-table th:first-child {
+            text-align: left;
+        }
+
+        .asset-table td input,
+        .asset-table td textarea {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            width: 100%;
+            padding: 8px 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 40px;
+        }
+
+        .asset-table .table-value-input {
+            position: relative;
+            top: -2px;
+        }
+
+        .asset-table td textarea {
+            resize: vertical;
+        }
+
+        .asset-table td input::placeholder,
+        .asset-table td textarea::placeholder {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+            color: #666;
+        }
+		
+        .asset-table td input:focus,
+        .asset-table td textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 1px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn, .reset-btn {
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .reset-btn {
+            background: #f8f9fa;
+            color: #495057;
+            border: 1px solid #dee2e6;
+            margin-top: 10px;
+        }
+
+        .reset-btn:hover {
+            background: #e9ecef;
+        }
+
+        .reset-btn.is-resetting {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        
+        .compact-section {
+            display: flex;
+            flex-direction: column;
+        }
+        
+         .compact-section > h3, .compact-section > h4 {
+             margin-bottom: 8px;
+        }
+
+        .compact-section h3, .compact-section h4 {
+            color: #667eea;
+            font-size: 1rem;
+        }
+
+        .add-btn, .add-asset-btn {
+            background: #f0f2f5;
+            color: #4b4f56;
+            border: 1px solid #dcdfe3;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .add-asset-btn {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .add-btn:hover, .add-asset-btn:hover {
+            background: #e4e6e9;
+            border-color: #ccc;
+        }
+        .dynamic-section-container {
+            position: relative;
+            padding: 25px 15px 15px;
+            margin-top: 15px;
+            border: 1px dashed #b0b8c5;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.6);
+        }
+        .dynamic-section-container:first-of-type {
+            margin-top: 0;
+        }
+       
+        .circular-remove-btn {
+            display: inline-block;
+            position: relative;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            vertical-align: middle;
+        }
+        .circular-remove-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 2px;
+            background-color: #721c24;
+            transform: translate(-50%, -50%);
+            border-radius: 1px;
+        }
+        .circular-remove-btn:hover {
+            background: #f1b0b7;
+            transform: scale(1.1);
+        }
+        .remove-btn {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+        }
+        .remove-asset-row-btn {
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* --- RESPONSIVE STYLES --- */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            
+            .form-container {
+                border-radius: 0;
+            }
+            
+            .form-content {
+                padding: 15px 10px;
+            }
+
+            .logo-text {
+                font-size: 1.6rem;
+            }
+
+            .header-text h1 {
+                font-size: 1.1rem;
+            }
+            
+            /* Stack multi-column grids */
+            .form-row,
+            .form-row-condensed,
+            .form-row-three,
+            .form-row-four,
+            .name-abn-row,
+            .value-control-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .form-row > .form-group,
+            .form-row > div[id$="-container"] {
+                margin-bottom: 15px;
+            }
+
+            .radio-group {
+                max-width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            /* Responsive Table Styles */
+            .asset-table {
+                box-shadow: none;
+                border: none;
+            }
+            
+            .asset-table thead {
+                display: none;
+            }
+
+            .asset-table tr {
+                display: block;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 10px;
+                background: #fff;
+            }
+            
+            .asset-table tbody, .asset-table tr, .asset-table td {
+                display: block;
+                width: 100% !important;
+            }
+
+            .asset-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border-bottom: 1px solid #eee;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            .asset-table td:last-child {
+                border-bottom: 0;
+            }
+
+            .asset-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #333;
+                font-size: 13px;
+            }
+            
+            .asset-table td input,
+            .asset-table td textarea {
+                font-size: 14px;
+            }
+            
+            .remove-asset-row-btn {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+            }
+            
+            .asset-table td:has(.remove-asset-row-btn) {
+                text-align: center;
+                padding: 10px 0 0 0;
+            }
+            .asset-table td:has(.remove-asset-row-btn)::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo-text">CRAIG McKIE, LAWYER</div>
+                </div>
+                <div class="header-text">
+                    <h1>Estate Planning Checklist</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-content">
+            <form name="estate-planning-form" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
+                <input type="hidden" name="form-name" value="estate-planning-form">
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+
+                <div class="form-section">
+                    <h2 class="section-title">Personal Information</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="compact-section">
+                                <h3>Name 1</h3>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name1_full" name="name1_full" required>
+                                        <label for="name1_full" class="floating-label">
+                                            <span class="floating-label-text">Full Name</span>
+                                            <span class="floating-instruction">Enter full legal name</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <textarea class="floating-input floating-textarea" id="name1_address" name="name1_address" required></textarea>
+                                        <label for="name1_address" class="floating-label">
+                                            <span class="floating-label-text">Address</span>
+                                            <span class="floating-instruction">Enter full residential address</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <div class="form-group">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="name1_mobile" name="name1_mobile" required>
+                                                <label for="name1_mobile" class="floating-label">
+                                                    <span class="floating-label-text">Mobile</span>
+                                                    <span class="floating-instruction">Enter phone number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="floating-label-container">
+                                                <input type="date" class="floating-input" id="name1_dob" name="name1_dob" required>
+                                                <label for="name1_dob" class="floating-label">
+                                                    <span class="floating-label-text">Date of Birth</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="email" class="floating-input" id="name1_email" name="name1_email" required>
+                                        <label for="name1_email" class="floating-label">
+                                            <span class="floating-label-text">Email</span>
+                                            <span class="floating-instruction">Enter email address</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name1_occupation" name="name1_occupation">
+                                        <label for="name1_occupation" class="floating-label">
+                                            <span class="floating-label-text">Occupation</span>
+                                            <span class="floating-instruction">Enter current occupation</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <fieldset>
+                                            <legend>Australian Citizen</legend>
+                                            <div class="radio-group">
+                                                <label class="radio-item">
+                                                    <input type="radio" name="name1_aus_citizen" value="yes" required>
+                                                    <span>Yes</span>
+                                                </label>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="name1_aus_citizen" value="no">
+                                                    <span>No</span>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group">
+                                            <label for="name1_marital_status">Marital Status</label>
+                                            <select id="name1_marital_status" name="name1_marital_status" required>
+                                                <option value="">Select...</option>
+                                                <option value="single">Single</option>
+                                                <option value="married">Married</option>
+                                                <option value="defacto">De facto</option>
+                                                <option value="divorced">Divorced</option>
+                                                <option value="widowed">Widowed</option>
+                                                <option value="separated">Separated</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name1_other_citizen" name="name1_other_citizen">
+                                        <label for="name1_other_citizen" class="floating-label">
+                                            <span class="floating-label-text">Other Citizenship</span>
+                                            <span class="floating-instruction">If applicable</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="compact-section">
+                                <h3>Name 2</h3>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name2_full" name="name2_full">
+                                        <label for="name2_full" class="floating-label">
+                                            <span class="floating-label-text">Full Name</span>
+                                            <span class="floating-instruction">Enter full legal name</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <textarea class="floating-input floating-textarea" id="name2_address" name="name2_address"></textarea>
+                                        <label for="name2_address" class="floating-label">
+                                            <span class="floating-label-text">Address</span>
+                                            <span class="floating-instruction">Enter full residential address</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <div class="form-group">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="name2_mobile" name="name2_mobile">
+                                                <label for="name2_mobile" class="floating-label">
+                                                    <span class="floating-label-text">Mobile</span>
+                                                    <span class="floating-instruction">Enter phone number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="floating-label-container">
+                                                <input type="date" class="floating-input" id="name2_dob" name="name2_dob">
+                                                <label for="name2_dob" class="floating-label">
+                                                    <span class="floating-label-text">Date of Birth</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="email" class="floating-input" id="name2_email" name="name2_email">
+                                        <label for="name2_email" class="floating-label">
+                                            <span class="floating-label-text">Email</span>
+                                            <span class="floating-instruction">Enter email address</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name2_occupation" name="name2_occupation">
+                                        <label for="name2_occupation" class="floating-label">
+                                            <span class="floating-label-text">Occupation</span>
+                                            <span class="floating-instruction">Enter current occupation</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <fieldset>
+                                            <legend>Australian Citizen</legend>
+                                            <div class="radio-group">
+                                                <label class="radio-item">
+                                                    <input type="radio" name="name2_aus_citizen" value="yes">
+                                                    <span>Yes</span>
+                                                </label>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="name2_aus_citizen" value="no">
+                                                    <span>No</span>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group">
+                                            <label for="name2_marital_status">Marital Status</label>
+                                            <select id="name2_marital_status" name="name2_marital_status">
+                                                <option value="">Select...</option>
+                                                <option value="single">Single</option>
+                                                <option value="married">Married</option>
+                                                <option value="defacto">De facto</option>
+                                                <option value="divorced">Divorced</option>
+                                                <option value="widowed">Widowed</option>
+                                                <option value="separated">Separated</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="name2_other_citizen" name="name2_other_citizen">
+                                        <label for="name2_other_citizen" class="floating-label">
+                                            <span class="floating-label-text">Other Citizenship</span>
+                                            <span class="floating-instruction">If applicable</span>                                   
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">Family Information</h2>
+                    <div class="form-row">
+                        <div id="children-container">
+                            <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Children</h3>
+                            <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Child 1"></button>
+                                <div class="compact-section">
+                                    <h4>Child 1</h4>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="child_full_name_1" name="child_full_name_1">
+                                            <label for="child_full_name_1" class="floating-label"><span class="floating-label-text">Full Name</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="child_address_1" name="child_address_1"></textarea>
+                                            <label for="child_address_1" class="floating-label"><span class="floating-label-text">Address</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="child_occupation_1" name="child_occupation_1">
+                                                <label for="child_occupation_1" class="floating-label"><span class="floating-label-text">Occupation</span></label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="child_spouse_name_1" name="child_spouse_name_1">
+                                                <label for="child_spouse_name_1" class="floating-label"><span class="floating-label-text">Spouse/Partner Name</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="date" class="floating-input" id="child_dob_1" name="child_dob_1">
+                                                <label for="child_dob_1" class="floating-label"><span class="floating-label-text">Date of Birth</span></label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="child_phone_1" name="child_phone_1">
+                                                <label for="child_phone_1" class="floating-label"><span class="floating-label-text">Phone</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="email" class="floating-input" id="child_email_1" name="child_email_1">
+                                            <label for="child_email_1" class="floating-label"><span class="floating-label-text">Email</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="add-btn" id="add-child-btn">+ Add Child</button>
+                        </div>
+
+                        <div id="grandchildren-container">
+                            <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Grandchildren</h3>
+                            <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Grandchild 1"></button>
+                                <div class="compact-section">
+                                    <h4>Grandchild 1</h4>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="grandchild_full_name_1" name="grandchild_full_name_1">
+                                            <label for="grandchild_full_name_1" class="floating-label"><span class="floating-label-text">Full Name</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="grandchild_address_1" name="grandchild_address_1"></textarea>
+                                            <label for="grandchild_address_1" class="floating-label"><span class="floating-label-text">Address</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="grandchild_occupation_1" name="grandchild_occupation_1">
+                                            <label for="grandchild_occupation_1" class="floating-label"><span class="floating-label-text">Occupation</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="date" class="floating-input" id="grandchild_dob_1" name="grandchild_dob_1">
+                                                <label for="grandchild_dob_1" class="floating-label"><span class="floating-label-text">Date of Birth</span></label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="grandchild_phone_1" name="grandchild_phone_1">
+                                                <label for="grandchild_phone_1" class="floating-label"><span class="floating-label-text">Phone</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="email" class="floating-input" id="grandchild_email_1" name="grandchild_email_1">
+                                            <label for="grandchild_email_1" class="floating-label"><span class="floating-label-text">Email</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="add-btn" id="add-grandchild-btn">+ Add Grandchild</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-section">
+                    <h2 class="section-title">Executors and Beneficiaries</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="floating-label-container">
+                                <textarea class="floating-input floating-textarea" id="proposed_executors" name="proposed_executors" required></textarea>
+                                <label for="proposed_executors" class="floating-label">
+                                    <span class="floating-label-text">Proposed Executor(s)</span>
+                                    <span class="floating-instruction">Names, addresses, relationship</span>
+                                 </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="floating-label-container">
+                                <textarea class="floating-input floating-textarea" id="substitute_executors" name="substitute_executors"></textarea>
+                                <label for="substitute_executors" class="floating-label">
+                                    <span class="floating-label-text">Substitute Executor(s)</span>
+                                    <span class="floating-instruction">Names, addresses, relationship</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="floating-label-container">
+                            <textarea class="floating-input floating-textarea" id="beneficiary_issues" name="beneficiary_issues"></textarea>
+                            <label for="beneficiary_issues" class="floating-label">
+                                <span class="floating-label-text">Beneficiary Special Considerations</span>
+                                <span class="floating-instruction">Disabilities, dependencies, bankruptcy, etc.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="floating-label-container">
+                                <textarea class="floating-input floating-textarea" id="other_family_info" name="other_family_info"></textarea>
+                                <label for="other_family_info" class="floating-label">
+                                    <span class="floating-label-text">Other Family Information</span>
+                                    <span class="floating-instruction">Any other family information</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="floating-label-container">
+                                <textarea class="floating-input floating-textarea" id="other_relevant_info" name="other_relevant_info"></textarea>
+                                <label for="other_relevant_info" class="floating-label">
+                                    <span class="floating-label-text">Other Relevant Information</span>
+                                    <span class="floating-instruction">Any other information</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section" id="assets-section">
+                    <h2 class="section-title">Assets</h2>
+                    
+                    <h3 style="color: #667eea; margin-bottom: 10px; font-size: 1rem;">Assets in Sole Name (Name 1)</h3>
+                    <table class="asset-table" aria-label="Assets in sole name of Name 1">
+                        <thead>
+                            <tr>
+                                <th style="width: 44%;">Asset Description</th>
+                                <th style="width: 15%;">Approx Value</th>
+                                <th style="width: 35%;">Beneficiary(ies)</th>
+                                <th style="width: 6%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="name1_assets_tbody">
+                            <tr>
+                                <td data-label="Asset Description"><textarea name="name1_asset_desc_1" placeholder="Asset description..."></textarea></td>
+                                <td data-label="Approx Value"><input type="text" class="currency-input table-value-input" name="name1_asset_value_1" placeholder="$"></td>
+                                <td data-label="Beneficiary(ies)"><textarea name="name1_asset_beneficiary_1" placeholder="Beneficiaries..."></textarea></td>
+                                <td><button type="button" class="circular-remove-btn remove-asset-row-btn" aria-label="Remove Asset Row"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-asset-btn" data-table-id="name1_assets_tbody" data-type="name1_asset">+ Add Asset</button>
+
+                    <h3 style="color: #667eea; margin-top: 20px; margin-bottom: 10px; font-size: 1rem;">Assets in Sole Name (Name 2)</h3>
+                    <table class="asset-table" aria-label="Assets in sole name of Name 2">
+                         <thead>
+                            <tr>
+                                <th style="width: 44%;">Asset Description</th>
+                                <th style="width: 15%;">Approx Value</th>
+                                <th style="width: 35%;">Beneficiary(ies)</th>
+                                <th style="width: 6%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="name2_assets_tbody">
+                            <tr>
+                                <td data-label="Asset Description"><textarea name="name2_asset_desc_1" placeholder="Asset description..."></textarea></td>
+                                <td data-label="Approx Value"><input type="text" class="currency-input table-value-input" name="name2_asset_value_1" placeholder="$"></td>
+                                <td data-label="Beneficiary(ies)"><textarea name="name2_asset_beneficiary_1" placeholder="Beneficiaries..."></textarea></td>
+                                <td><button type="button" class="circular-remove-btn remove-asset-row-btn" aria-label="Remove Asset Row"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-asset-btn" data-table-id="name2_assets_tbody" data-type="name2_asset">+ Add Asset</button>
+
+                    <h3 style="color: #667eea; margin-top: 20px; margin-bottom: 10px; font-size: 1rem;">Joint Assets</h3>
+                    <table class="asset-table" aria-label="Joint assets">
+                        <thead>
+                            <tr>
+                                <th style="width: 44%;">Asset Description</th>
+                                <th style="width: 15%;">Approx Value</th>
+                                <th style="width: 35%;">Beneficiary(ies)</th>
+                                <th style="width: 6%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="joint_assets_tbody">
+                            <tr>
+                                <td data-label="Asset Description"><textarea name="joint_asset_desc_1" placeholder="Asset description..."></textarea></td>
+                                <td data-label="Approx Value"><input type="text" class="currency-input table-value-input" name="joint_asset_value_1" placeholder="$"></td>
+                                <td data-label="Beneficiary(ies)"><textarea name="joint_asset_beneficiary_1" placeholder="Beneficiaries..."></textarea></td>
+
+                                <td><button type="button" class="circular-remove-btn remove-asset-row-btn" aria-label="Remove Asset Row"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-asset-btn" data-table-id="joint_assets_tbody" data-type="joint_asset">+ Add Asset</button>
+                </div>
+
+                <div class="form-section" id="business-structures-section">
+                    <h2 class="section-title">Business Structures</h2>
+                    
+                    <div class="form-row">
+                        <div id="companies-container">
+                             <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Companies</h3>
+                             <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Company 1"></button>
+                                <div class="compact-section">
+                                    <h4>Company 1</h4>
+                                    <div class="form-group">
+                                        <div class="name-abn-row">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="company_name_1" name="company_name_1">
+                                                <label for="company_name_1" class="floating-label">
+                                                    <span class="floating-label-text">Company Name</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="company_abn_acn_1" name="company_abn_acn_1">
+                                                <label for="company_abn_acn_1" class="floating-label">
+                                                    <span class="floating-label-text">ABN/ACN</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="directors_names_1" name="directors_names_1"></textarea>
+                                            <label for="directors_names_1" class="floating-label">
+                                                <span class="floating-label-text">Directors</span>
+                                                <span class="floating-instruction">Full names</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="shareholders_names_1" name="shareholders_names_1"></textarea>
+                                            <label for="shareholders_names_1" class="floating-label">
+                                                <span class="floating-label-text">Shareholders</span>
+                                                <span class="floating-instruction">Names &amp; shareholdings</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="value-control-row">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input currency-input" id="company_value_1" name="company_value_1">
+                                                <label for="company_value_1" class="floating-label">
+                                                    <span class="floating-label-text">Approx Value</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="company_beneficiaries_1" name="company_beneficiaries_1">
+                                                <label for="company_beneficiaries_1" class="floating-label">
+                                                    <span class="floating-label-text">Beneficiaries</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                             <button type="button" class="add-btn" id="add-company-btn">+ Add Company</button>
+                        </div>
+                        
+                        <div id="trusts-container">
+                            <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Trusts</h3>
+                            <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Trust 1"></button>
+                                <div class="compact-section">
+                                    <h4>Trust 1</h4>
+                                    <div class="form-group">
+                                        <div class="name-abn-row">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="trust_name_1" name="trust_name_1">
+                                                <label for="trust_name_1" class="floating-label">
+                                                    <span class="floating-label-text">Trust Name</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="trust_abn_acn_1" name="trust_abn_acn_1">
+                                                <label for="trust_abn_acn_1" class="floating-label">
+                                                    <span class="floating-label-text">ABN/ACN</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="trust_trustee_1" name="trust_trustee_1">
+                                                <label for="trust_trustee_1" class="floating-label">
+                                                    <span class="floating-label-text">Trustee</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="trust_appointor_1" name="trust_appointor_1">
+                                                <label for="trust_appointor_1" class="floating-label">
+                                                    <span class="floating-label-text">Appointor</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="trust_beneficiaries_1" name="trust_beneficiaries_1"></textarea>
+                                            <label for="trust_beneficiaries_1" class="floating-label">
+                                                <span class="floating-label-text">Beneficiaries</span>
+                                                <span class="floating-instruction">List all beneficiaries</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="value-control-row">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input currency-input" id="trust_value_1" name="trust_value_1">
+                                                <label for="trust_value_1" class="floating-label">
+                                                    <span class="floating-label-text">Approx Value</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="trust_control_1" name="trust_control_1">
+                                                <label for="trust_control_1" class="floating-label">
+                                                    <span class="floating-label-text">Control</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="add-btn" id="add-trust-btn">+ Add Trust</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">Superannuation & Insurance</h2>
+                    
+                    <div class="form-row">
+                        <div id="super-container">
+                             <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Superannuation</h3>
+                             <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Superannuation 1"></button>
+                                <div class="compact-section">
+                                    <h4>Superannuation 1</h4>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="super_fund_name_1" name="super_fund_name_1">
+                                            <label for="super_fund_name_1" class="floating-label">
+                                                <span class="floating-label-text">Fund Name</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="super_trustee_1" name="super_trustee_1">
+                                                <label for="super_trustee_1" class="floating-label">
+                                                    <span class="floating-label-text">Trustee</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="super_members_1" name="super_members_1">
+                                                <label for="super_members_1" class="floating-label">
+                                                    <span class="floating-label-text">Members</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="super_nominated_beneficiary_1" name="super_nominated_beneficiary_1">
+                                            <label for="super_nominated_beneficiary_1" class="floating-label">
+                                                <span class="floating-label-text">Nominated Beneficiary</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="super_assets_1" name="super_assets_1"></textarea>
+                                            <label for="super_assets_1" class="floating-label">
+                                                <span class="floating-label-text">Assets & Value</span>
+                                                <span class="floating-instruction">List assets and approximate values</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                             <button type="button" class="add-btn" id="add-super-btn">+ Add Superannuation</button>
+                        </div>
+                        
+                        <div id="insurance-container">
+                             <h3 style="color: #2c3e50; font-size: 1.1rem; margin-bottom: 10px;">Life Insurance</h3>
+                             <div class="dynamic-section-container">
+                                <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Life Insurance 1"></button>
+                                <div class="compact-section">
+                                    <h4>Life Insurance 1</h4>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="insurance_name_1" name="insurance_name_1">
+                                            <label for="insurance_name_1" class="floating-label">
+                                                <span class="floating-label-text">Insurance Company</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row-condensed">
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="insurance_policy_number_1" name="insurance_policy_number_1">
+                                                <label for="insurance_policy_number_1" class="floating-label">
+                                                    <span class="floating-label-text">Policy Number</span>
+                                                </label>
+                                            </div>
+                                            <div class="floating-label-container">
+                                                <input type="text" class="floating-input" id="insurance_value_1" name="insurance_value_1">
+                                                <label for="insurance_value_1" class="floating-label">
+                                                    <span class="floating-label-text">Coverage Amount</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="insurance_beneficiary_1" name="insurance_beneficiary_1"></textarea>
+                                            <label for="insurance_beneficiary_1" class="floating-label">
+                                                <span class="floating-label-text">Beneficiary</span>
+                                                <span class="floating-instruction">List beneficiaries</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="floating-label-container">
+                                            <textarea class="floating-input floating-textarea" id="insurance_details_1" name="insurance_details_1"></textarea>
+                                            <label for="insurance_details_1" class="floating-label">
+                                                <span class="floating-label-text">Policy Details</span>
+                                                <span class="floating-instruction">Type of coverage, terms, etc</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                             <button type="button" class="add-btn" id="add-insurance-btn">+ Add Insurance</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">Professional Advisors</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="compact-section">
+                                <h3>Accountant</h3>
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="accountant_practice" name="accountant_practice">
+                                        <label for="accountant_practice" class="floating-label">
+                                            <span class="floating-label-text">Practice Name</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="accountant_name" name="accountant_name">
+                                            <label for="accountant_name" class="floating-label">
+                                                <span class="floating-label-text">Accountant Name</span>
+                                            </label>
+                                        </div>
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="accountant_contact" name="accountant_contact">
+                                            <label for="accountant_contact" class="floating-label">
+                                                <span class="floating-label-text">Contact Number</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="compact-section">
+                                <h3>Financial Planner</h3>
+                                <div class="form-group">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="planner_company" name="planner_company">
+                                        <label for="planner_company" class="floating-label">
+                                            <span class="floating-label-text">Company/Practice Name</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-row-condensed">
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="planner_name" name="planner_name">
+                                            <label for="planner_name" class="floating-label">
+                                                <span class="floating-label-text">Planner Name</span>
+                                            </label>
+                                        </div>
+                                        <div class="floating-label-container">
+                                            <input type="text" class="floating-input" id="planner_contact" name="planner_contact">
+                                            <label for="planner_contact" class="floating-label">
+                                                <span class="floating-label-text">Contact Number</span>
+                                            </label>
+                                        .
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Estate Planning Checklist</button>
+                <button type="button" class="reset-btn">Reset Form</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form[name="estate-planning-form"]');
+            const formKey = 'estate-planning-form-data';
+            const floatingInputs = document.querySelectorAll('.floating-input, .floating-textarea');
+            const resetButton = document.querySelector('.reset-btn');
+
+            // --- SAVE/LOAD FUNCTIONALITY ---
+
+            function saveFormData() {
+                const data = {};
+                form.querySelectorAll('input:not([type="file"]), textarea, select').forEach(el => {
+                    if (el.name) {
+                        if (el.type === 'radio') {
+                            if (el.checked) {
+                                data[el.name] = el.value;
+                            }
+                        } else {
+                           // For currency, save the raw number
+                           if (el.classList.contains('currency-input')) {
+                                data[el.name] = el.value.replace(/[^0-9.-]+/g, "");
+                           } else {
+                                data[el.name] = el.value;
+                           }
+                        }
+                    }
+                });
+                localStorage.setItem(formKey, JSON.stringify(data));
+            }
+
+            function loadFormData() {
+                const savedData = localStorage.getItem(formKey);
+                if (!savedData) return;
+
+                const data = JSON.parse(savedData);
+                form.querySelectorAll('input:not([type="file"]), textarea, select').forEach(el => {
+                    if (el.name && data[el.name] !== undefined) {
+                        if (el.type === 'radio') {
+                            if (el.value === data[el.name]) {
+                                el.checked = true;
+                            }
+                        } else {
+                            el.value = data[el.name];
+                        }
+                    }
+                });
+                
+                document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                    const item = radio.closest('.radio-item');
+                    if (item) {
+                        item.style.borderColor = radio.checked ? '#667eea' : '#ccc';
+                    }
+                });
+
+                // After loading, format any currency fields that have values.
+                document.querySelectorAll('.currency-input').forEach(input => {
+                    formatCurrencyField(input);
+                });
+            }
+
+            // --- CORE FUNCTIONS ---
+
+             function formatCurrencyField(input) {
+                if (!input) return;
+                let value = input.value;
+                if (value) {
+                    let number = parseFloat(value.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(number)) {
+                        input.value = new Intl.NumberFormat('en-AU', {
+                            style: 'currency',
+                            currency: 'AUD',
+                        }).format(number);
+                    } else {
+                        input.value = ''; // Clear if not a valid number
+                    }
+                }
+            }
+
+
+            function forceResetAppearance() {
+                 form.querySelectorAll('textarea').forEach(textarea => {
+                    if (textarea.closest('.asset-table')) {
+                        textarea.style.height = '40px';
+                    } else if (textarea.classList.contains('floating-textarea')) {
+                        textarea.style.height = '48px';
+                    }
+                    textarea.style.overflow = 'hidden';
+                });
+            }
+
+            function checkFloatingLabel(input) {
+                const label = input.nextElementSibling;
+                if (input.type === 'date') {
+                    if (input.value !== '' || input === document.activeElement) {
+                        input.classList.add('has-content');
+                    } else {
+                        input.classList.remove('has-content');
+                    }
+                }
+                if (!label || !label.classList.contains('floating-label')) return;
+                
+                const hasValue = input.value !== '';
+                const isFocused = input === document.activeElement;
+
+                if (hasValue || isFocused) {
+                    label.classList.add('active');
+                } else {
+                    label.classList.remove('active');
+                }
+
+                if (input.tagName === 'TEXTAREA') {
+                    if (isFocused || hasValue) {
+                         input.style.height = 'auto'; // allow it to expand
+                         input.style.height = input.scrollHeight + 'px';
+                    } else {
+                        input.style.height = '48px';
+                    }
+                }
+            }
+
+            function initializeNewInputs(container) {
+                const newFloatingInputs = container.querySelectorAll('.floating-input, .floating-textarea');
+                newFloatingInputs.forEach(input => {
+                    checkFloatingLabel(input); // Check initial state
+                    input.addEventListener('focus', () => checkFloatingLabel(input));
+                    input.addEventListener('blur', () => checkFloatingLabel(input));
+                    input.addEventListener('input', () => checkFloatingLabel(input));
+                     if (input.tagName === 'TEXTAREA') {
+                        input.style.height = '48px';
+                    }
+                });
+            }
+            
+            // --- EVENT LISTENERS ---
+
+            floatingInputs.forEach(input => {
+                input.addEventListener('focus', () => checkFloatingLabel(input));
+                input.addEventListener('blur', () => checkFloatingLabel(input));
+                input.addEventListener('input', () => checkFloatingLabel(input));
+            });
+
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.addEventListener('mousedown', function() {
+                    this.dataset.wasChecked = this.checked;
+                });
+
+                radio.addEventListener('click', function() {
+                    if (this.dataset.wasChecked === 'true') {
+                        this.checked = false;
+                    }
+                    
+                    const groupName = this.name;
+                    document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach(rb => {
+                        if (rb !== this) {
+                            rb.checked = false;
+                        }
+                        const item = rb.closest('.radio-item');
+                        if (item) {
+                            item.style.borderColor = rb.checked ? '#667eea' : '#ccc';
+                        }
+                    });
+                    
+                    saveFormData();
+                });
+            });
+
+            form.addEventListener('input', saveFormData);
+            form.addEventListener('change', saveFormData);
+
+             // Event delegation for currency formatting
+            form.addEventListener('focusin', (e) => {
+                if (e.target.classList.contains('currency-input')) {
+                    let value = e.target.value;
+                    if (value) {
+                        let rawValue = value.replace(/[^0-9.-]+/g, "");
+                        e.target.value = rawValue;
+                    }
+                }
+            });
+
+            form.addEventListener('focusout', (e) => { // 'focusout' bubbles, 'blur' does not
+                if (e.target.classList.contains('currency-input')) {
+                   formatCurrencyField(e.target);
+                }
+            });
+            
+            resetButton.addEventListener('click', function() {
+                form.reset();
+                localStorage.removeItem(formKey);
+
+                document.querySelectorAll('textarea').forEach(textarea => {
+                    textarea.style.height = '';
+                });
+
+                document.querySelectorAll('input, textarea, select').forEach(field => {
+                    field.style.borderColor = '';
+                });
+                document.querySelectorAll('.radio-item').forEach(item => {
+                    item.style.borderColor = '';
+                });
+                document.querySelectorAll('fieldset').forEach(fs => {
+                    fs.style.border = '';
+                    fs.style.padding = '';
+                });
+
+                setTimeout(() => {
+                    floatingInputs.forEach(input => checkFloatingLabel(input));
+                    forceResetAppearance();
+                }, 10);
+                
+                resetButton.disabled = true;
+                resetButton.classList.add('is-resetting');
+                resetButton.textContent = 'Form Cleared!';
+                
+                setTimeout(() => {
+                    resetButton.classList.remove('is-resetting');
+                    resetButton.textContent = 'Reset Form';
+                    resetButton.disabled = false;
+                }, 1500);
+            });
+            
+            // --- DYNAMIC ELEMENTS LOGIC ---
+            let name1AssetCount = 1, name2AssetCount = 1, jointAssetCount = 1;
+            let companyCount = 1, trustCount = 1, superCount = 1, insuranceCount = 1;
+            let childCount = 1, grandchildCount = 1;
+
+            form.addEventListener('click', (e) => {
+                // Handle Add Asset
+                if (e.target.classList.contains('add-asset-btn')) {
+                    const tableId = e.target.dataset.tableId;
+                    const type = e.target.dataset.type;
+                    const tbody = document.getElementById(tableId);
+                    
+                    let count;
+                    if (type === 'name1_asset') { count = ++name1AssetCount; }
+                    else if (type === 'name2_asset') { count = ++name2AssetCount; }
+                    else { count = ++jointAssetCount; }
+
+                    const newRowHtml = `
+                        <tr>
+                            <td data-label="Asset Description"><textarea name="${type}_desc_${count}" placeholder="Asset description..."></textarea></td>
+                            <td data-label="Approx Value"><input type="text" class="currency-input table-value-input" name="${type}_value_${count}" placeholder="$"></td>
+                            <td data-label="Beneficiary(ies)"><textarea name="${type}_beneficiary_${count}" placeholder="Beneficiaries..."></textarea></td>
+                            <td><button type="button" class="circular-remove-btn remove-asset-row-btn" aria-label="Remove Asset Row"></button></td>
+                        </tr>
+                    `;
+                    tbody.insertAdjacentHTML('beforeend', newRowHtml);
+
+                    // --- FIX FOR COLLAPSED TEXTAREA ---
+                    const newRow = tbody.lastElementChild;
+                    if (newRow) {
+                        const textareas = newRow.querySelectorAll('textarea');
+                        textareas.forEach(ta => {
+                            ta.style.height = '40px'; 
+                        });
+                    }
+                    // --- END FIX ---
+                }
+
+                // Handle Remove Asset Row or Dynamic Section
+                if (e.target.classList.contains('remove-asset-row-btn')) {
+                    e.target.closest('tr').remove();
+                    saveFormData();
+                } else if (e.target.classList.contains('remove-btn')) {
+                    e.target.closest('.dynamic-section-container').remove();
+                    saveFormData();
+                }
+
+                // Handle Add Child
+                if (e.target.matches('#add-child-btn')) {
+                    childCount++;
+                    const childHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Child ${childCount}"></button>
+                        <div class="compact-section">
+                            <h4>Child ${childCount}</h4>
+                             <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="child_full_name_${childCount}" name="child_full_name_${childCount}">
+                                    <label for="child_full_name_${childCount}" class="floating-label"><span class="floating-label-text">Full Name</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="child_address_${childCount}" name="child_address_${childCount}"></textarea>
+                                    <label for="child_address_${childCount}" class="floating-label"><span class="floating-label-text">Address</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="child_occupation_${childCount}" name="child_occupation_${childCount}">
+                                        <label for="child_occupation_${childCount}" class="floating-label"><span class="floating-label-text">Occupation</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="child_spouse_name_${childCount}" name="child_spouse_name_${childCount}">
+                                        <label for="child_spouse_name_${childCount}" class="floating-label"><span class="floating-label-text">Spouse/Partner Name</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="date" class="floating-input" id="child_dob_${childCount}" name="child_dob_${childCount}">
+                                        <label for="child_dob_${childCount}" class="floating-label"><span class="floating-label-text">Date of Birth</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="child_phone_${childCount}" name="child_phone_${childCount}">
+                                        <label for="child_phone_${childCount}" class="floating-label"><span class="floating-label-text">Phone</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="email" class="floating-input" id="child_email_${childCount}" name="child_email_${childCount}">
+                                    <label for="child_email_${childCount}" class="floating-label"><span class="floating-label-text">Email</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', childHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+                
+                // Handle Add Grandchild
+                if (e.target.matches('#add-grandchild-btn')) {
+                    grandchildCount++;
+                    const grandchildHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Grandchild ${grandchildCount}"></button>
+                        <div class="compact-section">
+                            <h4>Grandchild ${grandchildCount}</h4>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="grandchild_full_name_${grandchildCount}" name="grandchild_full_name_${grandchildCount}">
+                                    <label for="grandchild_full_name_${grandchildCount}" class="floating-label"><span class="floating-label-text">Full Name</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="grandchild_address_${grandchildCount}" name="grandchild_address_${grandchildCount}"></textarea>
+                                    <label for="grandchild_address_${grandchildCount}" class="floating-label"><span class="floating-label-text">Address</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="grandchild_occupation_${grandchildCount}" name="grandchild_occupation_${grandchildCount}">
+                                    <label for="grandchild_occupation_${grandchildCount}" class="floating-label"><span class="floating-label-text">Occupation</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="date" class="floating-input" id="grandchild_dob_${grandchildCount}" name="grandchild_dob_${grandchildCount}">
+                                        <label for="grandchild_dob_${grandchildCount}" class="floating-label"><span class="floating-label-text">Date of Birth</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="grandchild_phone_${grandchildCount}" name="grandchild_phone_${grandchildCount}">
+                                        <label for="grandchild_phone_${grandchildCount}" class="floating-label"><span class="floating-label-text">Phone</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="email" class="floating-input" id="grandchild_email_${grandchildCount}" name="grandchild_email_${grandchildCount}">
+                                    <label for="grandchild_email_${grandchildCount}" class="floating-label"><span class="floating-label-text">Email</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', grandchildHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+
+                // Handle Add Company
+                if (e.target.matches('#add-company-btn')) {
+                    companyCount++;
+                    const companyHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Company ${companyCount}"></button>
+                        <div class="compact-section">
+                            <h4>Company ${companyCount}</h4>
+                            <div class="form-group">
+                                <div class="name-abn-row">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="company_name_${companyCount}" name="company_name_${companyCount}">
+                                        <label for="company_name_${companyCount}" class="floating-label"><span class="floating-label-text">Company Name</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="company_abn_acn_${companyCount}" name="company_abn_acn_${companyCount}">
+                                        <label for="company_abn_acn_${companyCount}" class="floating-label"><span class="floating-label-text">ABN/ACN</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="directors_names_${companyCount}" name="directors_names_${companyCount}"></textarea>
+                                    <label for="directors_names_${companyCount}" class="floating-label"><span class="floating-label-text">Directors</span><span class="floating-instruction">Full names</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="shareholders_names_${companyCount}" name="shareholders_names_${companyCount}"></textarea>
+                                    <label for="shareholders_names_${companyCount}" class="floating-label"><span class="floating-label-text">Shareholders</span><span class="floating-instruction">Names &amp; shareholdings</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="value-control-row">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input currency-input" id="company_value_${companyCount}" name="company_value_${companyCount}">
+                                        <label for="company_value_${companyCount}" class="floating-label"><span class="floating-label-text">Approx Value</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="company_beneficiaries_${companyCount}" name="company_beneficiaries_${companyCount}">
+                                        <label for="company_beneficiaries_${companyCount}" class="floating-label"><span class="floating-label-text">Beneficiaries</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', companyHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+
+                // Handle Add Trust
+                if (e.target.matches('#add-trust-btn')) {
+                    trustCount++;
+                    const trustHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Trust ${trustCount}"></button>
+                        <div class="compact-section">
+                            <h4>Trust ${trustCount}</h4>
+                            <div class="form-group">
+                                <div class="name-abn-row">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="trust_name_${trustCount}" name="trust_name_${trustCount}">
+                                        <label for="trust_name_${trustCount}" class="floating-label"><span class="floating-label-text">Trust Name</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="trust_abn_acn_${trustCount}" name="trust_abn_acn_${trustCount}">
+                                        <label for="trust_abn_acn_${trustCount}" class="floating-label"><span class="floating-label-text">ABN/ACN</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="trust_trustee_${trustCount}" name="trust_trustee_${trustCount}">
+                                        <label for="trust_trustee_${trustCount}" class="floating-label"><span class="floating-label-text">Trustee</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="trust_appointor_${trustCount}" name="trust_appointor_${trustCount}">
+                                        <label for="trust_appointor_${trustCount}" class="floating-label"><span class="floating-label-text">Appointor</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="trust_beneficiaries_${trustCount}" name="trust_beneficiaries_${trustCount}"></textarea>
+                                    <label for="trust_beneficiaries_${trustCount}" class="floating-label"><span class="floating-label-text">Beneficiaries</span><span class="floating-instruction">List all beneficiaries</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="value-control-row">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input currency-input" id="trust_value_${trustCount}" name="trust_value_${trustCount}">
+                                        <label for="trust_value_${trustCount}" class="floating-label"><span class="floating-label-text">Approx Value</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="trust_control_${trustCount}" name="trust_control_${trustCount}">
+                                        <label for="trust_control_${trustCount}" class="floating-label"><span class="floating-label-text">Control</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', trustHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+
+                // Handle Add Superannuation
+                if (e.target.matches('#add-super-btn')) {
+                    superCount++;
+                    const superHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Superannuation ${superCount}"></button>
+                        <div class="compact-section">
+                            <h4>Superannuation ${superCount}</h4>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="super_fund_name_${superCount}" name="super_fund_name_${superCount}">
+                                    <label for="super_fund_name_${superCount}" class="floating-label"><span class="floating-label-text">Fund Name</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="super_trustee_${superCount}" name="super_trustee_${superCount}">
+                                        <label for="super_trustee_${superCount}" class="floating-label"><span class="floating-label-text">Trustee</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="super_members_${superCount}" name="super_members_${superCount}">
+                                        <label for="super_members_${superCount}" class="floating-label"><span class="floating-label-text">Members</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="super_nominated_beneficiary_${superCount}" name="super_nominated_beneficiary_${superCount}">
+                                    <label for="super_nominated_beneficiary_${superCount}" class="floating-label"><span class="floating-label-text">Nominated Beneficiary</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="super_assets_${superCount}" name="super_assets_${superCount}"></textarea>
+                                    <label for="super_assets_${superCount}" class="floating-label"><span class="floating-label-text">Assets & Value</span><span class="floating-instruction">List assets and approximate values</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', superHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+
+                // Handle Add Insurance
+                if (e.target.matches('#add-insurance-btn')) {
+                    insuranceCount++;
+                    const insuranceHtml = `
+                    <div class="dynamic-section-container">
+                        <button type="button" class="circular-remove-btn remove-btn" aria-label="Remove Life Insurance ${insuranceCount}"></button>
+                        <div class="compact-section">
+                            <h4>Life Insurance ${insuranceCount}</h4>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <input type="text" class="floating-input" id="insurance_name_${insuranceCount}" name="insurance_name_${insuranceCount}">
+                                    <label for="insurance_name_${insuranceCount}" class="floating-label"><span class="floating-label-text">Insurance Company</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row-condensed">
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="insurance_policy_number_${insuranceCount}" name="insurance_policy_number_${insuranceCount}">
+                                        <label for="insurance_policy_number_${insuranceCount}" class="floating-label"><span class="floating-label-text">Policy Number</span></label>
+                                    </div>
+                                    <div class="floating-label-container">
+                                        <input type="text" class="floating-input" id="insurance_value_${insuranceCount}" name="insurance_value_${insuranceCount}">
+                                        <label for="insurance_value_${insuranceCount}" class="floating-label"><span class="floating-label-text">Coverage Amount</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="insurance_beneficiary_${insuranceCount}" name="insurance_beneficiary_${insuranceCount}"></textarea>
+                                    <label for="insurance_beneficiary_${insuranceCount}" class="floating-label"><span class="floating-label-text">Beneficiary</span><span class="floating-instruction">List beneficiaries</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="floating-label-container">
+                                    <textarea class="floating-input floating-textarea" id="insurance_details_${insuranceCount}" name="insurance_details_${insuranceCount}"></textarea>
+                                    <label for="insurance_details_${insuranceCount}" class="floating-label"><span class="floating-label-text">Policy Details</span><span class="floating-instruction">Type of coverage, terms, etc</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    e.target.insertAdjacentHTML('beforebegin', insuranceHtml);
+                    initializeNewInputs(e.target.previousElementSibling);
+                }
+            });
+
+            // --- INITIALIZE ---
+            loadFormData();
+            floatingInputs.forEach(input => {
+                checkFloatingLabel(input)
+                if (input.tagName === 'TEXTAREA') {
+                   input.style.height = '48px'; // Ensure all textareas start collapsed
+                }
+            });
+            forceResetAppearance();
+
+        });
+    </script>
+</body>
+</html>
