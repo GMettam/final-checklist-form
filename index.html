@@ -19,6 +19,11 @@
             min-height: 100vh;
             padding: 15px;
         }
+        
+        /* --- ADDED RULE FOR FONT CONSISTENCY --- */
+        input, textarea, select {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+        }
 
         .form-container {
             max-width: 1200px;
@@ -376,7 +381,6 @@
 
         .asset-table td input,
         .asset-table td textarea {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
             font-size: 14px;
             width: 100%;
             padding: 8px 6px;
@@ -396,7 +400,6 @@
 
         .asset-table td input::placeholder,
         .asset-table td textarea::placeholder {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
             color: #666;
         }
 		
@@ -665,8 +668,7 @@
   <p style="display:none">
     <label>Don't fill this out if you're human: <input name="bot-field"></label>
   </p>
-  <!-- ... Your form fields ... -->
-                <div class="form-section">
+  <div class="form-section">
                     <h2 class="section-title">Personal Information</h2>
                     
                     <div class="form-row">
@@ -694,6 +696,7 @@
                                     </div>
                                 </div>
                                 
+
                                 <div class="form-group">
                                     <div class="form-row-condensed">
                                         <div class="form-group">
