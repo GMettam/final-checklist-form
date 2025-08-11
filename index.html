@@ -1431,8 +1431,10 @@
                         </div>
                     </div>
                 </div>
-
-                <button type="submit" class="submit-btn">Submit Estate Planning Checklist</button>
+                
+                <input type="file" id="document-upload" name="documents[]" multiple hidden>
+                <button type="button" id="add-documents-btn" class="submit-btn" style="background: #5a67d8;">Add Documents</button>
+                <button type="submit" class="submit-btn" style="margin-top: 10px;">Submit Estate Planning Checklist</button>
                 <button type="button" class="reset-btn">Reset Form</button>
             </form>
         </div>
@@ -1444,6 +1446,23 @@
             const formKey = 'estate-planning-form-data';
             const floatingInputs = document.querySelectorAll('.floating-input, .floating-textarea');
             const resetButton = document.querySelector('.reset-btn');
+            const addDocumentsBtn = document.getElementById('add-documents-btn');
+            const fileInput = document.getElementById('document-upload');
+
+            // --- DOCUMENT UPLOAD LOGIC ---
+            addDocumentsBtn.addEventListener('click', function() {
+                fileInput.click();
+            });
+
+            fileInput.addEventListener('change', function() {
+                if (fileInput.files.length > 0) {
+                    addDocumentsBtn.textContent = `${fileInput.files.length} document(s) selected`;
+                    addDocumentsBtn.style.background = '#28a745'; // Green success color
+                } else {
+                    addDocumentsBtn.textContent = 'Add Documents';
+                    addDocumentsBtn.style.background = '#5a67d8'; // Original color
+                }
+            });
 
             // --- SAVE/LOAD FUNCTIONALITY ---
 
@@ -1627,6 +1646,11 @@
             resetButton.addEventListener('click', function() {
                 form.reset();
                 localStorage.removeItem(formKey);
+                
+                // Clear file input and reset the Add Documents button
+                fileInput.value = '';
+                addDocumentsBtn.textContent = 'Add Documents';
+                addDocumentsBtn.style.background = '#5a67d8';
 
                 document.querySelectorAll('textarea').forEach(textarea => {
                     textarea.style.height = '';
@@ -1718,6 +1742,7 @@
                                 <div class="floating-label-container">
                                     <input type="text" class="floating-input" id="child_full_name_${childCount}" name="child_full_name_${childCount}">
                                     <label for="child_full_name_${childCount}" class="floating-label"><span class="floating-label-text">Full Name</span></label>
+
                                 </div>
                             </div>
                             <div class="form-group">
